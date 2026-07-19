@@ -42,22 +42,16 @@ export default function Programs() {
 
   return (
     <section className="py-20 bg-amity-light-bg relative overflow-hidden" id="programs">
-      {/* Decorative curvy background */}
-      <svg className="absolute inset-0 w-full h-full pointer-events-none z-0 opacity-80" preserveAspectRatio="none" viewBox="0 0 1440 800">
-        <defs>
-          <linearGradient id="programCurveGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#f8fafc" />
-            <stop offset="100%" stopColor="#e2e8f0" />
-          </linearGradient>
-        </defs>
-        {/* Subtle gradient wash across the middle */}
-        <path 
-          fill="url(#programCurveGrad)" 
-          d="M0,250 C500,450 900,150 1440,350 L1440,500 C900,300 500,600 0,400 Z" 
-        />
-        {/* Top-right to bottom-left strokes */}
+      {/* Decorative lines - Desktop */}
+      <svg className="hidden md:block absolute inset-0 w-full h-full pointer-events-none z-0 opacity-80" preserveAspectRatio="none" viewBox="0 0 1440 800">
         <path fill="none" stroke="#cbd5e1" strokeWidth="1.5" strokeDasharray="6 4" opacity="0.6" d="M1440,50 C1000,250 400,150 0,550" />
         <path fill="none" stroke="#e2e8f0" strokeWidth="2" opacity="0.8" d="M1440,150 C900,450 500,350 0,750" />
+      </svg>
+
+      {/* Decorative lines - Mobile (Flatter curves to prevent distortion) */}
+      <svg className="block md:hidden absolute inset-0 w-full h-full pointer-events-none z-0 opacity-60" preserveAspectRatio="none" viewBox="0 0 400 1200">
+        <path fill="none" stroke="#cbd5e1" strokeWidth="1" strokeDasharray="4 4" opacity="0.6" d="M400,100 C300,300 100,200 0,500" />
+        <path fill="none" stroke="#e2e8f0" strokeWidth="1.5" opacity="0.8" d="M400,200 C250,500 150,400 0,700" />
       </svg>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

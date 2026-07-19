@@ -15,8 +15,8 @@ const iconMap = {
 export default function Stats() {
   return (
     <div className="relative -mt-1 z-30 bg-gradient-to-r from-amity-navy via-amity-navy-dark to-amity-navy border-t border-white/10 overflow-hidden" id="stats-ribbon">
-      {/* Subtle curvy lines background */}
-      <svg className="absolute inset-0 w-full h-full opacity-10 pointer-events-none" preserveAspectRatio="none" viewBox="0 0 1440 100">
+      {/* Subtle curvy lines background - Hidden on mobile to prevent stretching */}
+      <svg className="hidden md:block absolute inset-0 w-full h-full opacity-10 pointer-events-none" preserveAspectRatio="none" viewBox="0 0 1440 100">
         <path fill="none" stroke="#FFC72C" strokeWidth="1" d="M0,50 C320,150 420,-50 720,50 C1020,150 1120,-50 1440,50" />
         <path fill="none" stroke="#ffffff" strokeWidth="0.5" d="M0,70 C400,180 500,-20 900,70 C1300,160 1350,-20 1440,70" />
       </svg>

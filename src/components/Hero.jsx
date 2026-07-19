@@ -96,7 +96,7 @@ export default function Hero() {
             </span>
 
             {/* Title with Outfit display font */}
-            <h1 className="font-display font-extrabold text-2xl sm:text-4xl lg:text-5xl text-white tracking-tight leading-[1.1]">
+            <h1 className="font-display font-extrabold text-xl sm:text-3xl lg:text-4xl text-white tracking-tight leading-[1.1]">
               {HERO_SLIDES[current].title.split(".").map((word, index, arr) => (
                 <span key={index} className="block">
                   {word}
@@ -108,7 +108,7 @@ export default function Hero() {
             </h1>
 
             {/* Description */}
-            <p className="font-sans text-slate-300 text-base sm:text-lg max-w-2xl leading-relaxed font-light">
+            <p className="font-sans text-slate-300 text-sm sm:text-base max-w-2xl leading-relaxed font-light">
               {HERO_SLIDES[current].subtitle}
             </p>
 
@@ -133,7 +133,7 @@ export default function Hero() {
       </div>
 
       {/* Slider controls */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 sm:bottom-10 sm:right-12 sm:left-auto sm:translate-x-0 z-35 flex items-center space-x-4">
+      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 sm:bottom-10 sm:right-12 sm:left-auto sm:translate-x-0 z-35 flex items-center space-x-4">
         {/* Navigation buttons */}
         <button
           onClick={handlePrev}
