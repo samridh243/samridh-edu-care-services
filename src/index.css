@@ -20,6 +20,27 @@
   body {
     @apply font-sans bg-white text-slate-800 antialiased selection:bg-amity-gold selection:text-amity-navy;
   }
+  
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f5f9; 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #FFC72C; /* amity-gold */
+    border-radius: 5px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #E5B220; /* amity-gold-hover */
+  }
+  
+  /* Firefox Scrollbar */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #FFC72C #f1f5f9;
+  }
 }
 
 /* ─── Custom CSS animations (replaces motion library) ─── */
