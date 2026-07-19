@@ -133,7 +133,7 @@ export default function Hero() {
       </div>
 
       {/* Slider controls */}
-      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 sm:bottom-10 sm:right-12 sm:left-auto sm:translate-x-0 z-35 flex items-center space-x-4">
+      <div className="absolute bottom-20 left-1/2 -translate-x-1/2 sm:bottom-10 sm:right-12 sm:left-auto sm:translate-x-0 z-35 flex items-center space-x-4">
         {/* Navigation buttons */}
         <button
           onClick={handlePrev}
