@@ -132,8 +132,8 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Slider controls */}
-      <div className="absolute bottom-20 left-1/2 -translate-x-1/2 sm:bottom-10 sm:right-12 sm:left-auto sm:translate-x-0 z-35 flex items-center space-x-4">
+      {/* Slider controls (Hidden on mobile) */}
+      <div className="hidden sm:flex absolute sm:bottom-10 sm:right-12 z-35 items-center space-x-4">
         {/* Navigation buttons */}
         <button
           onClick={handlePrev}

@@ -48,11 +48,7 @@ export default function Programs() {
         <path fill="none" stroke="#e2e8f0" strokeWidth="2" opacity="0.8" d="M1440,150 C900,450 500,350 0,750" />
       </svg>
 
-      {/* Decorative lines - Mobile (Flatter curves to prevent distortion) */}
-      <svg className="block md:hidden absolute inset-0 w-full h-full pointer-events-none z-0 opacity-100" preserveAspectRatio="none" viewBox="0 0 400 1200">
-        <path fill="none" stroke="#94a3b8" strokeWidth="2" strokeDasharray="4 4" opacity="0.8" d="M400,100 C300,300 100,200 0,500" />
-        <path fill="none" stroke="#64748b" strokeWidth="3" opacity="1" d="M400,200 C250,500 150,400 0,700" />
-      </svg>
+
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
