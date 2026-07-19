@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-amity-navy: #123c6d;
+  --color-amity-navy-light: #1d5b8c;
+  --color-amity-navy-dark: #071f3b;
+  --color-amity-gold: #FFC72C;
+  --color-amity-gold-hover: #E5B220;
+  --color-amity-light-bg: #F8FAFC;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-display: "Outfit", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans bg-white text-slate-800 antialiased selection:bg-amity-gold selection:text-amity-navy;
+  }
+}
+
+/* ─── Custom CSS animations (replaces motion library) ─── */
+
+@keyframes heroTextIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroTextOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes mobileMenuIn {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 80vh;
+  }
+}
+
+@layer utilities {
+  .animate-hero-text-in {
+    animation: heroTextIn 0.6s ease-out both;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.25s ease-in-out both;
+  }
+
+  .animate-fade-in-scale {
+    animation: fadeInScale 0.25s ease-out both;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.3s ease-out both;
+  }
+
+  /* Accordion: smooth CSS grid-row height transition */
+  .accordion-grid {
+    display: grid;
+    transition: grid-template-rows 0.2s ease-in-out;
+  }
+  .accordion-grid.open {
+    grid-template-rows: 1fr;
+  }
+  .accordion-grid.closed {
+    grid-template-rows: 0fr;
+  }
+  .accordion-inner {
+    overflow: hidden;
+  }
+
+  /* Program card icon float animation */
+  .animate-icon-float {
+    animation: iconFloat 3s ease-in-out infinite;
+  }
+  @keyframes iconFloat {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50%       { transform: translateY(-6px) rotate(3deg); }
+  }
+
+  /* Icon panel glow pulse on hover — applied via group-hover in JSX */
+  .icon-glow {
+    transition: box-shadow 0.4s ease;
+  }
+  .group:hover .icon-glow {
+    box-shadow: 0 0 32px 6px rgba(255, 199, 44, 0.35);
+  }
+}
