@@ -1,9 +1,5 @@
 import {
-  Facebook,
-  Twitter,
   Instagram,
-  Linkedin,
-  Youtube,
   MapPin,
   Mail,
   Phone,
@@ -100,62 +96,24 @@ export default function Footer({ onOpenLegal }) {
                 </ul>
               </div>
 
-              {/* Social Channels */}
+              {/* Social Channel */}
               <div className="space-y-4">
                 <h5 className="font-display font-bold text-white text-sm uppercase tracking-wider border-b border-white/5 pb-2">
                   Connect With Us
                 </h5>
                 <p className="text-slate-400 text-xs font-light">
-                  Follow our official channels for direct alerts, admission
-                  timelines, and student spotlights.
+                  Follow us for direct alerts, admission timelines, and student
+                  spotlights.
                 </p>
-                <div className="flex items-center space-x-3 pt-1">
-                  <a
-                    href={data.socials.facebook}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2.5 bg-white/5 hover:bg-amity-gold hover:text-amity-navy rounded-full transition-colors text-slate-300"
-                    aria-label="Facebook"
-                  >
-                    <Facebook className="w-4 h-4" />
-                  </a>
-                  <a
-                    href={data.socials.twitter}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2.5 bg-white/5 hover:bg-amity-gold hover:text-amity-navy rounded-full transition-colors text-slate-300"
-                    aria-label="Twitter"
-                  >
-                    <Twitter className="w-4 h-4" />
-                  </a>
-                  <a
-                    href={data.socials.instagram}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2.5 bg-white/5 hover:bg-amity-gold hover:text-amity-navy rounded-full transition-colors text-slate-300"
-                    aria-label="Instagram"
-                  >
-                    <Instagram className="w-4 h-4" />
-                  </a>
-                  <a
-                    href={data.socials.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2.5 bg-white/5 hover:bg-amity-gold hover:text-amity-navy rounded-full transition-colors text-slate-300"
-                    aria-label="Linkedin"
-                  >
-                    <Linkedin className="w-4 h-4" />
-                  </a>
-                  <a
-                    href={data.socials.youtube}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2.5 bg-white/5 hover:bg-amity-gold hover:text-amity-navy rounded-full transition-colors text-slate-300"
-                    aria-label="Youtube"
-                  >
-                    <Youtube className="w-4 h-4" />
-                  </a>
-                </div>
+                <a
+                  href={data.socials.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center space-x-2.5 px-4 py-2.5 bg-transparent border border-slate-500 hover:border-amity-gold text-slate-300 hover:text-amity-gold rounded-lg transition-all duration-300 hover:scale-105 text-sm font-semibold"
+                >
+                  <Instagram className="w-5 h-5" />
+                  <span>Follow us on Instagram</span>
+                </a>
               </div>
             </div>
 

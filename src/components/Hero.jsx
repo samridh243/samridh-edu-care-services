@@ -85,10 +85,10 @@ export default function Hero() {
       </div>
 
       {/* Hero content */}
-      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center">
+      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center items-center sm:items-start">
         <div className="max-w-3xl pt-20">
           {/* Re-mounting via key re-triggers the CSS keyframe animation on each slide change */}
-          <div key={animKey} className="space-y-6 animate-hero-text-in">
+          <div key={animKey} className="space-y-6 animate-hero-text-in text-center sm:text-left flex flex-col items-center sm:items-start">
             {/* Highlight Pill */}
             <span className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-amity-gold/25 border border-amity-gold/40 text-amity-gold text-xs font-extrabold uppercase tracking-widest">
               <span className="w-2 h-2 rounded-full bg-amity-gold animate-ping"></span>
@@ -113,7 +113,7 @@ export default function Hero() {
             </p>
 
             {/* Conversion Buttons */}
-            <div className="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center space-y-3 sm:space-y-0 sm:space-x-4">
+            <div className="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center space-y-3 sm:space-y-0 sm:space-x-4 w-full sm:w-auto">
               <a
                 href="#apply"
                 className="bg-amity-gold hover:bg-amity-gold-hover text-amity-navy font-bold text-xs sm:text-base px-5 py-3 sm:px-8 sm:py-4 rounded-full shadow-[0_5px_18px_rgba(255,199,44,0.4)] hover:shadow-[0_8px_24px_rgba(255,199,44,0.6)] hover:scale-105 transition-all duration-300 uppercase tracking-wider text-center"
