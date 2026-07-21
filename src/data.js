@@ -3,7 +3,7 @@ export const HERO_SLIDES = [
     id: '1',
     title: 'Admissions. Guidance. Success.',
     subtitle: 'Samridh Edu Care Services is Berhampur\'s premier trusted educational counseling partner. We bridge the gap between ambitious students and India\'s top colleges with direct tie-ups and personalized consulting.',
-    highlightText: 'Admission & Counseling Open 2026-27',
+    highlightText: 'Admissions Open 2026',
     image: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1532&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     ctaText: 'Explore Courses',
     ctaLink: '#programs'
@@ -12,7 +12,7 @@ export const HERO_SLIDES = [
     id: '2',
     title: 'Complete NIOS 10th & 12th Open Schooling',
     subtitle: 'Empowering school dropouts and working professionals with government-recognized open schooling certification. Benefit from flexible class schedules, comprehensive coaching, and no age boundaries.',
-    highlightText: 'NIOS Admissions Open - Enroll Today',
+    highlightText: 'NIOS Admissions Open',
     image: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1600&q=80',
     ctaText: 'NIOS Admissions',
     ctaLink: '#apply'
