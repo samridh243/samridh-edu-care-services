@@ -1,0 +1,16 @@
+# Samridh Edu Care Services - robots.txt
+# https://samridheducareservices.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://samridheducareservices.com/sitemap.xml
+
+# Disallow non-essential paths
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /src/
+
+# Crawl rate
+Crawl-delay: 1
